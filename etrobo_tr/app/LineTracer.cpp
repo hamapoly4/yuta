@@ -34,7 +34,7 @@ void LineTracer::run() {
     // 走行体の向きを計算する
     int direction = calcDirection(isOnLine);
 
-    mWalker->setCommand(Walker::LOW, direction);
+    mWalker->setCommand(Walker::NORMAL, direction);
 
     // 走行を行う
     mWalker->run();
