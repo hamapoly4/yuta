@@ -1,8 +1,6 @@
 #include "Tracer.h" // <1>
 #include <stdio.h>
 
-// Hello I'm Kondo Yuta!!
-
 Tracer::Tracer():
   leftWheel(PORT_C), rightWheel(PORT_B), colorSensor(PORT_2), sonarSensor(PORT_3) { // <2>
   }
