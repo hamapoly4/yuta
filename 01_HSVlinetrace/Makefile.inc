@@ -1,3 +1,4 @@
+
 mkfile_path := $(dir $(lastword $(MAKEFILE_LIST)))
 
 APPL_COBJS +=
@@ -20,7 +21,7 @@ APPL_DIRS += $(mkfile_path)app $(mkfile_path)unit
 
 
 INCLUDES += \
-	-I$(mkfile_path)app \
-	-I$(mkfile_path)unit
+	-I$(mkfile_path)unit \
+	-I/opt/ev3rt/include
 
 #COPTS += -fno-use-cxa-atexit

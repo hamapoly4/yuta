@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 
-using namespace ev3api;
+using namespace spikeapi;
 
 ColorSensor gcolorSensor(PORT_2);
 HSVconv gHSVconv(gcolorSensor);
